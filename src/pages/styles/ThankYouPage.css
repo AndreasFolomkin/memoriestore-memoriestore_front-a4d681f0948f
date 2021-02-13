@@ -1,0 +1,35 @@
+.thank-wrapper {
+  width: 480px;
+  text-align: right;
+  margin: 140px 307px 274px auto;
+}
+.thank-wrapper h1 {
+  color: #2b5b83;
+  font-family: "Alef", sans-serif;
+  font-weight: 700;
+  font-size: 53px;
+  margin-right: 13px;
+}
+.thank-wrapper p {
+  font-family: "Alef", sans-serif;
+  font-size: 22px;
+  margin-right: 15px;
+  margin-top: 70px;
+  margin-bottom: 76px;
+}
+.link {
+  font-family: "Alef", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.1px;
+  margin-top: 60px;
+
+  font-size: 22px;
+}
+.link a {
+  color: #2b5b83;
+}
+/* .main-wrapper {
+  height: 100vh;
+  width: 100vw;
+} */

@@ -1,0 +1,55 @@
+.navbar {
+	direction : rtl;
+	height: 70px;
+}
+
+.navbar a{
+	font-weight: 600;
+}
+
+.navbar-brand {
+	position: absolute;
+	left: 3px;
+	top: 0px;
+}
+.navbar-light .navbar-toggler{
+	border:2px solid #208092 !important;
+	outline: none;
+}
+.navbar-light .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(32, 128, 146, 1)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-brand img {
+	width: 205px;
+}
+
+.navbar-collapse {
+	flex-grow: 0 !important;
+}
+
+.login{
+    margin-right: 50px;
+    font-size: 20px;
+    background: #208092;
+    padding: 10px;
+    color: #FFFFFF !important;
+    position: relative;
+    top: -3px;	
+}
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+    .footer-memoriestor .navbar{
+    	display: none;
+    }
+    .navbar {
+    	height: auto;
+    }
+	.navbar-brand img {
+		width: 175px;
+	}	
+	.login{
+		background: none;
+	    color: inherit !important;	
+	}
+}

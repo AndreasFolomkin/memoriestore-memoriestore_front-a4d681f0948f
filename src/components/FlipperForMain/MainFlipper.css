@@ -1,0 +1,202 @@
+.container-for-flipper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.slick-list {
+  overflow: hidden;
+  width: 100vh;
+  order: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.slick-slider {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.slick-slider img {
+  width: 100%;
+  padding: 0;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.flipper-elem {
+  outline: none;
+}
+
+.slick-next,
+.slick-prev {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #f2f2f2;
+  font-size: 0;
+  outline: none;
+  display: block;
+  position: fixed;
+  bottom: 40px;
+}
+
+.slick-next {
+  background-image: url("../../img/right-arrow.svg");
+  left: 65%;
+  cursor: pointer;
+}
+
+.slick-prev {
+  background-image: url("../../img/left-arrow.svg");
+  left: 35%;
+  cursor: pointer;
+}
+
+.pages-counter {
+  font-family: "Alef, sans-serif-Regular";
+  /* margin-top: 50px;
+    margin-bottom: 45px; */
+}
+
+.flippage-container {
+  width: 800px;
+  height: 400px;
+}
+
+.flipperpage-image {
+  width: 100%;
+  height: 100%;
+}
+
+.pagenumberInput {
+  width: 20px;
+  margin-right: 4px;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+}
+
+.flipper-album-name {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.flipper-album,
+.album-f {
+  font-size: 30px;
+  font-family: Alef, sans-serif, Helvetica, sans-serif;
+}
+.album-f {
+  color: #2b5b83;
+  font-weight: bold;
+}
+/* ////////////////////////////////// */
+.container-for-flipper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.slick-list {
+  overflow: hidden;
+  width: 100vh;
+  order: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.slick-slider {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.slick-slider img {
+  width: 100%;
+  padding: 0;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.flipper-elem {
+  outline: none;
+}
+
+.manipulators {
+  display: flex;
+  width: 20%;
+  margin: 35px 0 40px 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slick-next,
+.slick-prev {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #f2f2f2;
+  font-size: 0;
+  outline: none;
+  display: block;
+  bottom: 40px;
+}
+
+.slick-next {
+  background-image: url("../../img/right-arrow.svg");
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.slick-prev {
+  background-image: url("../../img/left-arrow.svg");
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.double-arrows {
+  width: 20px;
+  height: 30px;
+}
+
+.arrows-container {
+  display: flex;
+}
+
+.pages-counter {
+  font-family: "Alef, sans-serif-Regular";
+}
+
+.flippage-container {
+  width: 1278px;
+  height: 662.5px;
+}
+
+.flipperpage-image {
+  width: 100%;
+  height: 100%;
+}
+
+.pagenumberInput {
+  width: 20px;
+  margin-right: 4px;
+  text-align: center;
+  font-size: 15px;
+}
+@media screen and (max-width: 1400px) {
+  .flippage-container {
+    width: 750px;
+    height: 375px;
+  }
+  .modal-main {
+    width: 800px;
+    height: auto;
+  }
+}

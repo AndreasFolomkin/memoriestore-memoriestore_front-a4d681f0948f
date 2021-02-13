@@ -1,0 +1,97 @@
+.select-list-container {
+  width: 100%;
+}
+.select-list-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+.leave-a-comment select,
+.type-of-album select {
+  border-color: #2b5b83;
+  border-width: 2px;
+  padding-right: 15px;
+  padding-left: 30px;
+  height: 30px;
+  direction: rtl;
+}
+.select-container select:nth-child(1) {
+  width: 100%;
+  border-left-width: 0px;
+}
+
+.leave-a-comment select {
+  font-weight: bold;
+  font-style: italic;
+}
+.select-list-container form button {
+  border: none;
+  color: white;
+  font-family: "Alef", sans-serif;
+  min-width: 90px;
+  height: 30px;
+  background-color: #2b5b83;
+  cursor: pointer;
+  outline: none;
+  align-self: baseline;
+  margin-top: 10px;
+  /* padding: 0 30px 0 30px; */
+  /* margin-right: 20px; */
+}
+
+.select-list-container form button:hover {
+  background-color: #1e90ff;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.select-list-container li {
+  display: flex;
+  margin-top: 20px;
+}
+
+.select-list-container li p {
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  padding-bottom: auto;
+  background-color: gainsboro;
+  padding: 10px;
+  height: auto;
+}
+.select-list-container li span {
+  word-wrap: break-word;
+  font-weight: 100;
+}
+
+.comment-delete-button {
+  width: 10%;
+  height: 30px;
+  color: red;
+  font-size: 25px;
+  padding-top: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.leave-a-feedback {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+}
+.leave-a-feedback input {
+  direction: rtl;
+  border-color: #2b5b83;
+  border-width: 2px;
+  padding-right: 15px;
+  padding-left: 30px;
+  height: 30px;
+  width: 100%;
+}

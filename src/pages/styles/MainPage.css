@@ -1,0 +1,144 @@
+.main-title {
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+}
+.main-button-container button {
+  background-color: #b55722;
+  box-shadow: 0 0 11px rgb(0, 0, 0);
+  font-size: 40px;
+}
+.main-title h1 {
+  font-family: "Alef", sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+  margin-bottom: 30px;
+  letter-spacing: 0px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: powderblue;
+}
+.main-title h2 {
+  margin-bottom: 30px;
+  font-size: 40px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: powderblue;
+  color: #152c40;
+}
+.main-title p {
+  font-family: "Alef", sans-serif;
+  font-size: 32px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: powderblue;
+  margin-bottom: 56px;
+  letter-spacing: 1px;
+}
+
+.footer-panel{
+	padding: 10px 0 10px 0;
+	text-align: center;
+	color: #C1C1C1;
+	font-size: 14px;
+}
+
+.footer-panel a{
+    position: absolute;
+    right: 20px;
+    background: #b55722;
+    padding: 0px 5px 2px 5px;
+    margin-top: -5px;	
+}
+.footer-panel a i{
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.footer-banner-wrapper {
+  background-image: url(../../img/footerbanner.png);
+  width: 100%;
+  margin-top: 118px;
+  height: 550px;
+  padding-top: 137px;
+  background-size: cover;
+}
+
+.footer-banner-wrapper p {
+  font-family: Alef, sans-serif;
+  color: white;
+  font-size: 13vw;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+.footer-banner-wrapper span {
+  font-weight: 300;
+}
+@media screen and (min-width: 1801px) {
+    .main-title {
+        bottom: 1%;
+        right: 3%;
+    }
+}
+@media screen and (max-width: 1800px) {
+    .main-title {
+        bottom: 5%;
+        right: 3%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .main-title {
+        margin: 120px 8.25% 0 9.45%;
+        right: -3%;
+    }
+  .footer-banner-wrapper {
+    background-size: cover;
+    height: 520px;
+  }
+}
+@media screen and (max-width: 1200px) {
+    .main-title {
+        margin: 120px 8.25% 3% 9.45%;
+        right: -5%;
+    }
+
+    .footer-banner-wrapper {
+        background-size: cover;
+        height: 520px;
+    }
+}
+@media screen and (max-width: 770px) {
+  .main-title {
+    margin: 120px 20px 0 0;
+  }
+  .main-title h2 {
+    font-size: 22px;
+    color: #2b5b83;
+    -webkit-text-stroke-width: 0.5px;
+  }
+  .main-button-container button {
+    border-radius: 5px;
+    height: 40px;
+    width: 140px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .photo-examples-header .one,
+  .photo-examples-header .two {
+    font-size: 25px;
+  }
+  .footer-banner-wrapper {
+    margin-top: 80px;
+    height: 120px;
+    background-size: cover;
+    position: relative;
+  }
+  .footer-banner-wrapper p {
+    position: absolute;
+    font-size: 46px;
+    bottom: 50px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    left: 7px;
+    margin-top: 80px;
+  }
+}

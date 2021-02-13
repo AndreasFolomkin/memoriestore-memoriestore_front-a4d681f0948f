@@ -1,0 +1,9 @@
+.request-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-hero-img{
+  background-image: url(../../img/hero.jpeg);	
+}

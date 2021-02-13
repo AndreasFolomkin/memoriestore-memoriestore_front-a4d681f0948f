@@ -1,0 +1,64 @@
+.profile-header {
+  font-size: 48px;
+  color: #2b5b83;
+  margin-top: 140px;
+  margin-left: 320px;
+  font-family: "Alef", sans-serif;
+}
+
+.profile-avatar {
+  width: 140px;
+  height: 140px;
+  border: 2px solid #338af3;
+  border-radius: 70px;
+  margin-left: 160px;
+  margin-bottom: 60px;
+  margin-top: 80px;
+  margin-right: 30px;
+}
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+.profile-designer-name {
+  font-family: "Alef", sans-serif;
+  font-size: 30px;
+  /* margin-bottom: 20px; */
+}
+.profile-country {
+  color: #747474;
+  font-size: 16px;
+  font-family: "Alef", sans-serif;
+}
+.left-marg {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 160px;
+  margin-right: 160px;
+  justify-content: center;
+}
+.desirgners-album {
+  margin-bottom: 100px;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 513px;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.desirgners-album img {
+  width: 100%;
+  max-height: 300px;
+}
+
+.designers-info-container {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.designers-info-container i {
+  font-size: 30px;
+}

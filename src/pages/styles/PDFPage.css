@@ -1,0 +1,10 @@
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+embed {
+  width: 80vw;
+  height: 100vh;
+}

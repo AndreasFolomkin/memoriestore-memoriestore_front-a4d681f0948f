@@ -1,0 +1,100 @@
+.popup {
+  /* position: fixed; */
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.popup-main {
+  position: absolute;
+  transform: translateX(90%) translateY(-145%);
+}
+
+.onclose-image,
+.zoom-image {
+  padding: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.popup-block {
+  display: block;
+}
+
+.popup-none {
+  display: none;
+}
+
+/* --------------------------------------- */
+
+.block {
+  border: 1px solid #2b5b83;
+  border-radius: 20px;
+  position: relative;
+  background: #2b5b83;
+  color: #fff;
+  box-shadow: 0 0 7px #000; /* Добавляем тень для блока */
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 310px;
+  height: 260px;
+  cursor: pointer;
+}
+.block::after,
+.block::before {
+  content: "";
+  position: absolute;
+  background: #2b5b83;
+  left: 20px;
+  bottom: -10px;
+  width: 80px;
+  height: 50px;
+  box-shadow: 0 0 7px #000; /* Добавляем тень для уголка */
+  z-index: -1; /* прячемза основным блоком */
+  transform: rotate(45deg); /* Поворачиваем на 45º */
+  -webkit-transform: rotate(45deg);
+}
+.block::before {
+  z-index: 1; /* Накладываем поверх, чтобы скрыть следы тени */
+  box-shadow: none; /* Прячем тень */
+}
+
+.container-for-text {
+  /* height: 150px; */
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 20px;
+  font-size: 16px;
+  text-align: left;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: start;
+  -webkit-align-items: center;
+  align-items: baseline;
+  z-index: 2;
+  flex-direction: column;
+}
+
+.close-popup {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  .popup-main {
+    position: absolute;
+    transform: translateX(60%) translateY(-150%);
+  }
+}
+@media screen and (max-width: 770px) {
+  .popup-main {
+    transform: translateX(0%) translateY(-130%);
+  }
+}

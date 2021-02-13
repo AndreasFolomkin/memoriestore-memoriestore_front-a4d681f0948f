@@ -1,0 +1,390 @@
+.container-for-three-albums {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-top: 36px;
+  align-self: center;
+  width: 100%;
+  padding: 0 144px;
+}
+
+.form {
+  margin-left: 30%;
+}
+.container-for-three-albums .album {
+  width: 553px;
+  margin: 0 10px 0 10px;
+}
+
+.order-page .form {
+  margin-left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.order-page .form h1 {
+  font-family: "Alef", sans-serif;
+  font-size: 50px;
+  color: #2b5b83;
+  font-weight: bold;
+  margin: 147px 16.8% 0 0;
+  letter-spacing: 1.5px;
+}
+.order-page .form .subtext-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 8.2%;
+}
+.order-page .form .albums-to-buy {
+  margin-right: 18.8%;
+  font-family: "Alef", sans-serif;
+  font-size: 18px;
+  margin-top: 62px;
+  width: 271px;
+  text-align: right;
+  line-height: 21px;
+}
+.order-page .form .discount {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Alef", sans-serif;
+  font-size: 32px;
+  color: #2b5b83;
+  display: flex;
+  align-items: flex-end;
+}
+.album-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  min-width: 270px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.album-container .top-side-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.album-container .top-side-container img {
+  max-width: 513px;
+  height: 265px;
+}
+.album-container .top-side-container p {
+  font-family: "Alef", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin: 22px 0;
+}
+.album-container .bottom-side-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 0px 25px;
+}
+.album-container .bottom-side-container img {
+  width: 74px !important;
+  height: 74px;
+  border-radius: 50px;
+  border: 1px solid #338af3;
+  object-fit: cover;
+}
+.album-container .bottom-side-container .info-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2px 17px 0 20px;
+}
+.album-container .bottom-side-container .info-wrapper .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.album-container .bottom-side-container .info-wrapper .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.album-container .bottom-side-container .info-wrapper .left-side p,
+.album-container .bottom-side-container .info-wrapper .right-side p {
+  font-family: "Alef", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.album-container .bottom-side-container .info-wrapper .right-side p {
+  text-align: right;
+}
+.album-container .bottom-side-container .info-wrapper .left-side p:first-child {
+  color: black;
+  margin-bottom: 10px;
+}
+.album-container .bottom-side-container .info-wrapper .left-side p:last-child {
+  color: #969696;
+}
+.album-container
+  .bottom-side-container
+  .info-wrapper
+  .right-side
+  p:first-child {
+  color: #969696;
+  font-family: "Alef", sans-serif;
+}
+.bottom-side-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.accept-cancel {
+  display: flex;
+  align-items: center;
+}
+.accept-cancel img {
+  margin-right: 20px;
+}
+.accept-cancel p {
+  font-family: "Alef", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+.album-container .bottom-side-container .info-wrapper .right-side p:last-child {
+  color: #2b5b83;
+  font-family: "Alef", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.mark-container {
+  width: 100%;
+  margin-top: 33px;
+}
+.mark-container .top-side {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.mark-container .top-side input {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e6e6e6;
+  background: none;
+  box-sizing: border-box;
+  text-align: center;
+  color: black;
+  font-family: "Alef", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.mark-container .top-side button {
+  border: none;
+  background-color: unset;
+  outline: none;
+  font-family: "Alef", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #152c40;
+  text-align: center;
+}
+.mark-container .bottom-side textarea {
+  margin-top: 23px;
+  margin-left: 6px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  height: 180px;
+  border: none;
+  text-align: right;
+  font-family: "Alef", sans-serif;
+  font-size: 18px;
+  padding-right: 70px;
+  box-sizing: border-box;
+  color: #a7a7a7;
+  background: url("../../img/chat.png") no-repeat 93% center;
+  background-color: #f2f2f2;
+  resize: none;
+  outline: none; /* обводка */
+}
+.form-footer {
+  margin-top: 70px;
+  width: 100%;
+  padding: 0 8.4%;
+}
+.form-footer .button-container button {
+  margin-left: 0;
+  width: 212px;
+  height: 54px;
+}
+.form-footer .no-album {
+  background: unset;
+  border: none;
+  margin-top: 12px;
+  text-decoration: underline;
+  color: #2b5b83;
+  width: 234px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+.flex-p {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.customer-name-bold {
+  color: #2b5b83;
+  font-weight: bold;
+  font-size: 24px;
+}
+.to-pay {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.to-pay a {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 30px;
+}
+.to-pay-price {
+  display: flex;
+  color: #000;
+  font-size: 20px;
+}
+.to-pay-price p {
+  direction: rtl;
+  color: #2b5b83;
+}
+.info-order {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 22px;
+}
+.info-order span {
+  /* direction: rtl; */
+}
+.info-order :nth-child(2) {
+  color: #2b5b83;
+  direction: rtl;
+}
+.info-order :nth-child(3),
+.order-used-pages {
+  color: gray;
+  direction: rtl;
+}
+
+.order-used-pages {
+  font-size: 22px;
+  align-self: flex-end;
+  margin-top: 10px;
+  direction: ltr;
+}
+
+.total-for-album {
+  position: absolute;
+  margin-left: 150px;
+}
+.disabled-album-button {
+  opacity: 0.7;
+}
+/* .disabled-album-button:hover {
+  background-color: red !important;
+}
+.disabled-album-button:hover::before {
+  background-color: red !important;
+  content: "Select any album";
+  line-height: 50px;
+} */
+
+.leave-a-comment {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 30px;
+  max-width: 500px;
+}
+
+.leave-a-comment p {
+  align-self: start;
+  height: 30px;
+  width: 90px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #2b5b83;
+}
+
+.comment-header,
+.type-of-album h3 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.comment-header {
+  margin-top: 25px;
+}
+.link-to-confirm {
+  user-select: none;
+  width: 400px;
+  background-color: #2b5b83;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  padding: 10px 30px 2px 30px;
+  text-decoration: none;
+}
+.link-to-confirm-container {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-to-confirm:hover {
+  background-color: #1e90ff;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-decoration: none;
+}
+.disabled-link {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1400px) {
+  .container-for-three-albums .album {
+    width: 400px;
+    margin: 10px;
+  }
+  .album-container .top-side-container img {
+    max-width: 370px;
+    height: 190px;
+  }
+  .container-for-three-albums {
+    padding: 0 44px;
+  }
+  .album-container {
+    height: 340px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .container-for-three-albums {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .link-to-confirm {
+    width: 170px;
+  }
+}

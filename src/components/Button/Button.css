@@ -1,0 +1,53 @@
+.button-container {
+  width: 0px;
+  margin-left: 0;
+  margin-right: auto;
+  align-items: right;
+  all: unset;
+}
+.button-container button {
+  border: none;
+  color: white;
+  font-family: "Alef", sans-serif;
+  font-size: 26px;
+  width: 302px;
+  height: 53px;
+  background-color: #2b5b83;
+  cursor: pointer;
+  outline: none;
+}
+.button-container button:hover {
+  background-color: #1e90ff;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.footer-memoriestor .button-container button {
+  margin-left: 60%;
+  width: 160px;
+  cursor: pointer;
+}
+
+.photo-examples .button-container button {
+  margin-left: 8%;
+  width: 222px;
+  cursor: pointer;
+}
+.how-works-wrapper .button-container button {
+  margin-left: 8%;
+  width: 290px;
+  cursor: pointer;
+}
+.button-container .like-button {
+  background-color: #1e90ff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 770px) {
+  .button-container button {
+    width: 170px;
+    height: 40px;
+    font-size: 16px;
+  }
+}

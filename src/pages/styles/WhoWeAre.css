@@ -1,0 +1,173 @@
+.desktop-foto {
+  display: block;
+}
+.mobile-foto {
+  display: none;
+}
+.btn-container{
+	width: 1000px;
+    margin: 20px auto !important;
+}
+.who-header {
+  color: #2b5b83;
+  font-size: 53px;
+  margin-top: 60px;
+  font-family: "Alef", sans-serif, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.who-we-are {
+  width: 610px;
+  margin-left: 160px;
+  margin-right: 40px;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.who-we-are :nth-child(3) {
+  margin-top: 15px;
+}
+
+.who-we-are span {
+  color: #2b5b83;
+  font-weight: bold;
+  font-size: 20px;
+}
+.container-for-who {
+  display: flex;
+  justify-content: center;
+}
+
+.container-for-who img {
+  margin-right: 160px;
+  height: 300px;
+  width: 250px;
+}
+.single-p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-form-container form {
+  width: 1000px;
+}
+.contact-form-container input {
+  background-color: #f2f2f2;
+  border: none;
+  color: #747474;
+  height: 40px;
+  width: 302px;
+  text-align: right;
+  padding-right: 20px;
+  box-sizing: border-box;
+  font-family: "Alef", sans-serif;
+  font-size: 14px;
+}
+.input {
+  background-color: #f2f2f2;
+  border: none;
+  color: #747474;
+  height: 40px;
+  width: 302px;
+  text-align: right;
+  padding-right: 20px;
+  box-sizing: border-box;
+  font-family: "Alef", sans-serif;
+  font-size: 14px;
+  direction: rtl;
+}
+.fields-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-top: 20px;
+}
+.contact-and-message {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+  margin-bottom: 160px;
+  width: inherit;
+  justify-content: space-between;
+}
+.contact-and-message div {
+  margin: 0;
+}
+.contact-and-message button {
+  margin: 0;
+  /* margin-right: 70px; */
+}
+.contact-and-message .button-container button {
+  width: 196px;
+}
+@media screen and (max-width: 1400px) {
+  .who-we-are {
+    width: 610px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .desktop-foto {
+    display: none;
+  }
+  .mobile-foto {
+    display: block;
+    float: right;
+  }
+  .who-header {
+    font-size: 30px;
+    margin-right: 20px;
+    text-align: right;
+  }
+  .container-for-who {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 300px;
+  }
+  .container-for-who img {
+    width: 150px;
+    height: 170px;
+    margin: 0px 0px 10px 20px;
+  }
+  .who-we-are {
+    width: 300px;
+    display: block;
+    margin-right: 70px;
+  }
+  .who-we-are div {
+    margin-top: 40px;
+  }
+  .single-p {
+    margin-top: 400px;
+    margin-bottom: 15px;
+  }
+  .contact-form-container form {
+    width: 300px;
+  }
+  .fields-container {
+    width: auto;
+    flex-direction: column;
+  }
+  .contact-and-message {
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+  .contact-and-message .button-container {
+    margin-top: 40px;
+  }
+  .contact-form-container input {
+    margin-bottom: 5px;
+  }
+}

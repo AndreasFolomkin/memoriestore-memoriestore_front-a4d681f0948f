@@ -1,0 +1,44 @@
+.slider-container {
+  /* width: 100%; */
+  margin-right: 15px;
+}
+
+.arrow {
+  width: 17px !important;
+  height: 13px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.right-arrow {
+  right: 0px;
+}
+
+.left-arrow {
+  left: -37px;
+}
+
+.slider-container div {
+  position: relative;
+}
+
+.slick-list {
+  width: 520px !important;
+  height: 260px;
+}
+.albums-image {
+  width: 520px !important;
+  height: 260px;
+}
+
+.slick-initialized {
+  width: 560px !important;
+  margin-left: 60px !important;
+}
+
+@media screen and (max-width: 1400px) {
+  .slider-container {
+    /* transform: scale(0.9); */
+  }
+}
