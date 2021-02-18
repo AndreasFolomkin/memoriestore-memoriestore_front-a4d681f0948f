@@ -162,25 +162,25 @@ class RegisterForm extends Component {
     if (!this.state.isSubmitted) {
       return (
         <div className="second-page">
-          <HeaderFooter
-            buttonText={headerFooterData.header_button_text}
-            faq={headerFooterData.faq}
-            albumExamples={headerFooterData.album_examples}
-            forDesigner={headerFooterData.for_designer}
-            gift_cards={headerFooterData.gift_cards}
-            who_we_are={headerFooterData.who_we_are}
-            className="header-memoriestor"
-          >
-            <Link to={`/login_page`}>
-              <label className="button-entrance">
-                <img src={LoginImg} alt="memoriestore" />
-                <p>{headerFooterData.log_in}</p>
-              </label>
-            </Link>
-            <Link to={`/`}>
-              <img src={Logo} className="header-logo" alt="memoriestore" />
-            </Link>
-          </HeaderFooter>
+          {/*<HeaderFooter*/}
+          {/*  buttonText={headerFooterData.header_button_text}*/}
+          {/*  faq={headerFooterData.faq}*/}
+          {/*  albumExamples={headerFooterData.album_examples}*/}
+          {/*  forDesigner={headerFooterData.for_designer}*/}
+          {/*  gift_cards={headerFooterData.gift_cards}*/}
+          {/*  who_we_are={headerFooterData.who_we_are}*/}
+          {/*  className="header-memoriestor"*/}
+          {/*>*/}
+          {/*  <Link to={`/login_page`}>*/}
+          {/*    <label className="button-entrance">*/}
+          {/*      <img src={LoginImg} alt="memoriestore" />*/}
+          {/*      <p>{headerFooterData.log_in} </p>*/}
+          {/*    </label>*/}
+          {/*  </Link>*/}
+          {/*  <Link to={`/`}>*/}
+          {/*    <img src={Logo} className="header-logo" alt="memoriestore" />*/}
+          {/*  </Link>*/}
+          {/*</HeaderFooter>*/}
           <form
             onSubmit={e => {
               e.preventDefault();
@@ -191,7 +191,7 @@ class RegisterForm extends Component {
             <Route exact path="/" component={MainPage} />
             <Link to={`/`} className="back-button">
               <img src={backico} alt="memoriestore" />{" "}
-              <p>{regData.data.back_button}</p>
+              <p>{regData.data.back_button}<h1>Klacni menya tyt</h1></p>
             </Link>
             <h1 className="order-header">{regData.data.order_header}</h1>
 

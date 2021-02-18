@@ -14,6 +14,7 @@ import WhoWeAre from "./pages/WhoWeAre";
 import GiftCards from "./pages/GiftCards";
 import PDFPage from "./pages/PDFPage";
 import ConfirmationPage from "./pages/ConfirmationPage";
+import RequestPageEng from "./pages/RequestPageEng";
 
 import { PrivateRoute } from "./utils/privateRoute";
 import { sendSessionSubmitted } from "./redux/actions/sendSession";
@@ -49,6 +50,7 @@ class App extends Component {
             <Route path="/login_page" component={LoginPage} />
             <Route path="/thank_you_page" component={ThankYouPage} />
             <Route path="/condition_page" component={PDFPage} />
+            <Route path="/request_page_eng/:ID?" component={RequestPageEng}/>
             <PrivateRoute
               path="/confirmation_page"
               component={ConfirmationPage}
