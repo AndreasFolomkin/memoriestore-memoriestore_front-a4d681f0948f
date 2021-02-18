@@ -65,7 +65,7 @@ class RequestPageEng extends React.Component{
                     className="regForm"
                     onSubmit={this.submit}
                 />
-                {/*<Sidebar etap={1} />*/}
+                <Sidebar etap={1} />
             </div>
         );
     }
