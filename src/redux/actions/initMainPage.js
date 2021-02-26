@@ -8,6 +8,7 @@ import {
 export const initMainPageTriggered = locale => ({
   type: INIT_MAINPAGE_TRIGGERED,
   payload: { locale }
+
 });
 
 export const initMainPageRequest = () => ({

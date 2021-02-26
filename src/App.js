@@ -50,7 +50,7 @@ class App extends Component {
             <Route path="/login_page" component={LoginPage} />
             <Route path="/thank_you_page" component={ThankYouPage} />
             <Route path="/condition_page" component={PDFPage} />
-            <Route path="/request_page_eng/:ID?" component={RequestPageEng}/>
+            <Route path="/request_page_eng/:id?/:name?/:lang?" component={RequestPageEng}/>
             <PrivateRoute
               path="/confirmation_page"
               component={ConfirmationPage}

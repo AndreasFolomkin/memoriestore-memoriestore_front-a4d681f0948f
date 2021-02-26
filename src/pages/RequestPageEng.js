@@ -1,22 +1,22 @@
-import React from 'react';
-import Alert from "react-bootstrap/Alert";
-import Preloader from "../componentsDumb/Preloader/Preloader";
-import RegisterForm from "../components/RegisterForm/RegisterForm";
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { BrowserRouter as Route, Link } from "react-router-dom";
+
+import { initRequestPageTriggered } from "../redux/actions/initRequestPage";
+import { sendSessionSubmitted } from "../redux/actions/sendSession";
+import { initMainPageTriggered } from "../redux/actions/initMainPage";
+import { sendLocationTriggered } from "../redux/actions/sendLocation";
+import { reduxFormBlur } from "../redux/actions/initReduxBlur";
+
 import Sidebar from "../components/Sidebar/Sidebar";
-import {initRequestPageTriggered} from "../redux/actions/initRequestPage";
-import {sendSessionSubmitted} from "../redux/actions/sendSession";
-import {reduxFormBlur} from "../redux/actions/initReduxBlur";
-import {initMainPageTriggered} from "../redux/actions/initMainPage";
-import {sendLocationTriggered} from "../redux/actions/sendLocation";
-import {connect} from "react-redux";
+import RegisterForm from "../components/RegisterForm/RegisterForm";
+import Preloader from "../componentsDumb/Preloader/Preloader";
 
+import "./styles/RequestPage.css";
 
-class RequestPageEng extends React.Component{
-
-
+class RequestPageEng extends Component {
     componentDidMount() {
         this.props.initMainPageTriggered();
-
         this.props.initRequestPageTriggered(
             localStorage.getItem("locale") || undefined
         );
@@ -65,7 +65,7 @@ class RequestPageEng extends React.Component{
                     className="regForm"
                     onSubmit={this.submit}
                 />
-                {/*<Sidebar etap={1} />*/}
+                <Sidebar etap={1} />
             </div>
         );
     }

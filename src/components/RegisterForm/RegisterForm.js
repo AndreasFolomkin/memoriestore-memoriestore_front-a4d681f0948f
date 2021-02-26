@@ -20,7 +20,8 @@ import { reduxFormBlur } from "../../redux/actions/initReduxBlur";
 import Logo from "../../img/mem.jpeg";
 import LoginImg from "../../img/login.svg";
 
-import "./RegisterForm.css";
+// import "./RegisterForm.css";
+import "./RegisterFormEng.css"
 
 class RegisterForm extends Component {
   constructor(props) {
@@ -161,7 +162,7 @@ class RegisterForm extends Component {
 
     if (!this.state.isSubmitted) {
       return (
-        <div className="second-page">
+        <div className="second-pa ge">
           {/*<HeaderFooter*/}
           {/*  buttonText={headerFooterData.header_button_text}*/}
           {/*  faq={headerFooterData.faq}*/}

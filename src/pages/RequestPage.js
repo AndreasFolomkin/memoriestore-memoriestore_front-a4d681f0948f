@@ -17,6 +17,7 @@ import "./styles/RequestPage.css";
 class RequestPage extends Component {
   componentDidMount() {
     this.props.initMainPageTriggered();
+    console.log("iniMainPageTriggered", this.props.initMainPageTriggered()) ;
     this.props.initRequestPageTriggered(
       localStorage.getItem("locale") || undefined
     );
