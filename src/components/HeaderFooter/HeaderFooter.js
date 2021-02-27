@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import { BrowserRouter as Route, Link } from "react-router-dom";
 import { connect } from "react-redux";
 
@@ -23,10 +23,13 @@ import israel from "./IL.png";
 import "./HeaderFooter.css";
 
 const HeaderFooter = props => {
+
+
     useEffect(() => {
         props.initHeaderFooterTriggered(
             localStorage.getItem("locale") || undefined
         );
+
     }, []);
 
 
@@ -35,14 +38,15 @@ const HeaderFooter = props => {
       case "He_il":
         return props.switchLocale("he_il");
       case "Eng":
-        return props.switchLocale("en_US");
+        return props.switchLocale("en_us");
       default:
         return console.log("Default Return");
     }
   };
   return (
     <div className={props.className}>
-        <button >Lang</button>
+        <button onClick={()=>props.switchLocale("he_il")} >Lang He</button>
+        <button onClick={()=>props.switchLocale("en_Us")} >Lang En</button>
 	    <Navbar bg="light" expand="lg">
 	    <Navbar.Brand href="/"><img src={Logo} alt="memoriestore" /></Navbar.Brand>
 	    <Navbar.Toggle aria-controls="basic-navbar-nav" />

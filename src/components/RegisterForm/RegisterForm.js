@@ -192,7 +192,7 @@ class RegisterForm extends Component {
             <Route exact path="/" component={MainPage} />
             <Link to={`/`} className="back-button">
               <img src={backico} alt="memoriestore" />{" "}
-              <p>{regData.data.back_button}<h1>Klacni menya tyt</h1></p>
+              <p>{regData.data.back_button}</p>
             </Link>
             <h1 className="order-header">{regData.data.order_header}</h1>
 
@@ -207,103 +207,110 @@ class RegisterForm extends Component {
               </div>
             </div>
             <h4 className="reg-form-text">{regData.data.extra_mini_header}</h4>
-            <div className="first-row">
+
+
+            {this.props.cliqaApp ? <></> :<>  <div className="first-row">
               <Field
-                className="input"
-                name="cloudpass"
-                component={customInput}
-                type="text"
-                //validate={[required]}
-                /* placeholder={`סיסמת ענן`}  */
-                placeholder={regData.data.cloudpass_placeholder}
-                onChange={this.handleChangeFunc}
-                onBlur={e => {
-                  this.props.reduxFormBlur(t, a);
-                }}
+                  className="input"
+                  name="cloudpass"
+                  component={customInput}
+                  type="text"
+                  //validate={[required]}
+                  // placeholder={`סיסמת ענן`}
+                  placeholder={regData.data.cloudpass_placeholder}
+                  onChange={this.handleChangeFunc}
+                  onBlur={e => {
+                    this.props.reduxFormBlur(t, a);
+                  }}
               />
               <Field
-                className="input"
-                name="linkonalbum"
-                component={customInput}
-                type="text"
-                validate={[required]}
-                placeholder={regData.data.album_name_placeholder}
-                onChange={this.handleChangeFunc}
-                onBlur={e => {
-                  this.props.reduxFormBlur(t, a);
-                }}
-              />
-            </div>
-            <div className="first-row">
-              <Field
-                className="input"
-                name="firstname"
-                component={customInput}
-                type="text"
-                validate={[required]}
-                placeholder={regData.data.phone_placeholder}
-                onChange={this.handleChangeFunc}
-                onBlur={e => {
-                  this.props.reduxFormBlur(t, a);
-                }}
-              />
-              <Field
-                className="input"
-                name="phone"
-                component={customInput}
-                type="number"
-                validate={[required, isValidPhone]}
-                placeholder={regData.data.name_placeholder}
-                onChange={this.handleChangeFunc}
-                onBlur={e => {
-                  this.props.reduxFormBlur(t, a);
-                }}
+                  className="input"
+                  name="linkonalbum"
+                  component={customInput}
+                  type="text"
+                  validate={[required]}
+                  placeholder={regData.data.album_name_placeholder}
+                  onChange={this.handleChangeFunc}
+                  onBlur={e => {
+                    this.props.reduxFormBlur(t, a);
+                  }}
               />
             </div>
-            <div className="secound-row">
-              <Field
-                className="input"
-                name="albumname"
-                component={customInput}
-                type="text"
-                validate={[required]}
-                placeholder={regData.data.link_placeholder}
-                onChange={this.handleChangeFunc}
-                onBlur={e => {
-                  this.props.reduxFormBlur(t, a);
-                }}
-              />
-              <Field
-                className="input"
-                name="email"
-                component={customInput}
-                type="email"
-                validate={[required, isValidEmail]}
-                // placeholder={`דוא"ל`}
-                placeholder={regData.data.email_placeholder}
-                onChange={this.handleChangeFunc}
-                onBlur={e => {
-                  this.props.reduxFormBlur(t, a);
-                }}
-              />
-            </div>
-            <div
-              className="radio-activity-container"
-              onClick={this.changeRadioArea}
+              < div className="first-row">
+                <Field
+                    className="input"
+                    name="firstname"
+                    component={customInput}
+                    type="text"
+                    validate={[required]}
+                    placeholder={regData.data.phone_placeholder}
+                    onChange={this.handleChangeFunc}
+                    onBlur={e => {
+                      this.props.reduxFormBlur(t, a);
+                    }}
+                />
+                <Field
+                    className="input"
+                    name="phone"
+                    component={customInput}
+                    type="number"
+                    validate={[required, isValidPhone]}
+                    placeholder={regData.data.name_placeholder}
+                    onChange={this.handleChangeFunc}
+                    onBlur={e => {
+                      this.props.reduxFormBlur(t, a);
+                    }}
+                />
+              </div>
+              <div className="secound-row">
+                <Field
+                    className="input"
+                    name="albumname"
+                    component={customInput}
+                    type="text"
+                    validate={[required]}
+                    placeholder={regData.data.link_placeholder}
+                    onChange={this.handleChangeFunc}
+                    onBlur={e => {
+                      this.props.reduxFormBlur(t, a);
+                    }}
+                />
+                <Field
+                    className="input"
+                    name="email"
+                    component={customInput}
+                    type="email"
+                    validate={[required, isValidEmail]}
+                    // placeholder={`דוא"ל`}
+                    placeholder={regData.data.email_placeholder}
+                    onChange={this.handleChangeFunc}
+                    onBlur={e => {
+                      this.props.reduxFormBlur(t, a);
+                    }}
+                />
+              </div> </>}
+
+
+
+            {this.props.cliqaApp===true ? <></>   : <> <div
+                className="radio-activity-container"
+                onClick={this.changeRadioArea}
             >
               <p className="radio-area-header">{regData.data.answer}</p>
               <img
-                alt="memoriestore"
-                src={arrow}
-                className={
-                  !this.state.radioButtonsActivity ? "down-arrow" : "top-arrow"
-                }
+                  alt="memoriestore"
+                  src={arrow}
+                  className={
+                    !this.state.radioButtonsActivity ? "down-arrow" : "top-arrow"
+                  }
               />
-            </div>
+            </div></> }
+
+
 
             <div
               className={
-                !this.state.radioButtonsActivity
+                !this.state.radioButtonsActivity && !this.props.cliqaApp
                   ? "radio-area-hide"
                   : "radio-area"
               }
@@ -404,6 +411,8 @@ class RegisterForm extends Component {
                 checkedValue={"DES_TASTE"}
               />
             </div>
+
+
             <Field
                 className="input-long text-area"
                 name="comments"

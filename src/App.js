@@ -42,7 +42,7 @@ class App extends Component {
               path="/designer_portfolio_page/:ID"
               component={DesignerPortfolioPage}
             />
-            <Route path="/request_page/:pageName?" component={RequestPage} />
+            <Route path="/request_page/:pageName?/:id?" component={RequestPage} />
             <Route path="/faq_page" component={FaqPage} />
             <Route path="/who_we_are" component={WhoWeAre} />
             <Route path="/gift_cards" component={GiftCards} />

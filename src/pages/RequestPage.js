@@ -16,10 +16,10 @@ import "./styles/RequestPage.css";
 
 class RequestPage extends Component {
   componentDidMount() {
-    this.props.initMainPageTriggered();
+    this.props.initMainPageTriggered()
     console.log("iniMainPageTriggered", this.props.initMainPageTriggered()) ;
-    this.props.initRequestPageTriggered(
-      localStorage.getItem("locale") || undefined
+    this.props.initRequestPageTriggered("en_us"            // Захардкодил сдесь язык  en_us
+      // localStorage.getItem("locale") || undefined
     );
     const { tariffName, albumPrice } = this.props.location.state || {};
 //    console.log("this.state.LOC", this.props.location.state);
@@ -39,6 +39,8 @@ class RequestPage extends Component {
   };
 
   render() {
+
+
     const {
       requestPage,
       isLoading,
@@ -48,10 +50,11 @@ class RequestPage extends Component {
       albums,
       isLoadingMain
     } = this.props;
-    const pageName = this.props.match.params ? this.props.match.params.pageName : undefined;
+    const {pageName,id} = this.props.match.params ? this.props.match.params : undefined;
+    console.log("namePage",pageName)
     const { album_name, price } = pageName && tariffs[pageName + '_album'] ? tariffs[pageName + '_album']  : {};
     const { tariffName, albumPrice } = album_name && price ? {tariffName:album_name,albumPrice:price} : this.props.location.state || {};
-    
+    let cliqaApp =  pageName==="cliqaApp" || false;
     if (isLoading || isLoadingMain) {
       return <Preloader />;
     }
@@ -65,8 +68,10 @@ class RequestPage extends Component {
           albumPrice={albumPrice}
           className="regForm"
           onSubmit={this.submit}
+          cliqaApp ={cliqaApp}
+          cliqaAppId ={id}
         />
-        <Sidebar etap={1} />
+        {/*<Sidebar etap={1} />*/}
       </div>
     );
   }
