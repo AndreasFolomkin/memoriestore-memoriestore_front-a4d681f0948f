@@ -71,7 +71,7 @@ class RequestPage extends Component {
           cliqaApp ={cliqaApp}
           cliqaAppId ={id}
         />
-        {/*<Sidebar etap={1} />*/}
+        <Sidebar etap={1} />
       </div>
     );
   }

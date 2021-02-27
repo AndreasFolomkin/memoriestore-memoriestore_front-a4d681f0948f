@@ -476,7 +476,7 @@ input[type="radio"]:after {
   border-radius: 15px;
   position: relative;
   top: 0;
-  left: 0x;
+  left: 0px;
   background-color: white;
   content: "";
   display: inline-block;

@@ -162,7 +162,7 @@ class RegisterForm extends Component {
 
     if (!this.state.isSubmitted) {
       return (
-        <div className="second-pa ge">
+        <div className="second-page">
           {/*<HeaderFooter*/}
           {/*  buttonText={headerFooterData.header_button_text}*/}
           {/*  faq={headerFooterData.faq}*/}

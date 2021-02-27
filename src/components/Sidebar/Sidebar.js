@@ -17,6 +17,7 @@ class Sidebar extends Component {
   }
   render() {
     const { data } = this.props;
+    const local = localStorage.getItem("locate");
 //    console.log(data)
     return (
       <div className="sidebar">
