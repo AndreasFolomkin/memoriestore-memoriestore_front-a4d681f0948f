@@ -18,8 +18,8 @@ class RequestPage extends Component {
   componentDidMount() {
     this.props.initMainPageTriggered()
     console.log("iniMainPageTriggered", this.props.initMainPageTriggered()) ;
-    this.props.initRequestPageTriggered("en_us"            // Захардкодил сдесь язык  en_us
-      // localStorage.getItem("locale") || undefined
+    this.props.initRequestPageTriggered(          // Захардкодил сдесь язык  en_us
+      localStorage.getItem("locale") || undefined
     );
     const { tariffName, albumPrice } = this.props.location.state || {};
 //    console.log("this.state.LOC", this.props.location.state);

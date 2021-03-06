@@ -20,8 +20,8 @@ import { reduxFormBlur } from "../../redux/actions/initReduxBlur";
 import Logo from "../../img/mem.jpeg";
 import LoginImg from "../../img/login.svg";
 
-// import "./RegisterForm.css";
-import "./RegisterFormEng.css"
+import "./RegisterForm.css";
+
 
 class RegisterForm extends Component {
   constructor(props) {
@@ -32,9 +32,10 @@ class RegisterForm extends Component {
       isSubmitted: false,
       isConfirmed: false,
       isEnlarged: false,
-      radioButtonsActivity: false
+      radioButtonsActivity: true
     };
   }
+
 
   handleChangeFunc = e => {
     this.setState({ value: e.target.value.toUpperCase() });
@@ -75,6 +76,8 @@ class RegisterForm extends Component {
     });
   };
   render() {
+   let langEngTrue = localStorage.getItem("locale") === "en_us" ;
+   console.log(langEngTrue, "langEngTrue")
 	  const {
       ff,
       handleSubmit,
@@ -211,7 +214,7 @@ class RegisterForm extends Component {
 
             {this.props.cliqaApp ? <></> :<>  <div className="first-row">
               <Field
-                  className="input"
+                  className={langEngTrue?"inputEng":"input"}
                   name="cloudpass"
                   component={customInput}
                   type="text"
@@ -224,7 +227,7 @@ class RegisterForm extends Component {
                   }}
               />
               <Field
-                  className="input"
+                  className={langEngTrue?"inputEng":"input"}
                   name="linkonalbum"
                   component={customInput}
                   type="text"
@@ -238,7 +241,7 @@ class RegisterForm extends Component {
             </div>
               < div className="first-row">
                 <Field
-                    className="input"
+                    className={langEngTrue?"inputEng":"input"}
                     name="firstname"
                     component={customInput}
                     type="text"
@@ -250,7 +253,7 @@ class RegisterForm extends Component {
                     }}
                 />
                 <Field
-                    className="input"
+                    className={langEngTrue?"inputEng":"input"}
                     name="phone"
                     component={customInput}
                     type="number"
@@ -264,7 +267,7 @@ class RegisterForm extends Component {
               </div>
               <div className="secound-row">
                 <Field
-                    className="input"
+                    className={langEngTrue?"inputEng":"input"}
                     name="albumname"
                     component={customInput}
                     type="text"
@@ -276,7 +279,7 @@ class RegisterForm extends Component {
                     }}
                 />
                 <Field
-                    className="input"
+                    className={langEngTrue?"inputEng":"input"}
                     name="email"
                     component={customInput}
                     type="email"
@@ -292,28 +295,31 @@ class RegisterForm extends Component {
 
 
 
-            {this.props.cliqaApp===true ? <></>   : <> <div
-                className="radio-activity-container"
-                onClick={this.changeRadioArea}
-            >
-              <p className="radio-area-header">{regData.data.answer}</p>
-              <img
-                  alt="memoriestore"
-                  src={arrow}
-                  className={
-                    !this.state.radioButtonsActivity ? "down-arrow" : "top-arrow"
-                  }
-              />
-            </div></> }
+            {/*{this.props.cliqaApp===true ? <></>   : <> <div*/}
+            {/*    className="radio-activity-container"*/}
+            {/*    onClick={this.changeRadioArea}*/}
+            {/*>*/}
+            {/*  <p className="radio-area-header">{regData.data.answer}</p>*/}
+            {/*  <img*/}
+            {/*      alt="memoriestore"*/}
+            {/*      src={arrow}*/}
+            {/*      className={*/}
+            {/*        !this.state.radioButtonsActivity ? "down-arrow" : "top-arrow"*/}
+            {/*      }*/}
+            {/*  />*/}
+            {/*</div></> }*/}
 
 
 
             <div
-              className={
-                !this.state.radioButtonsActivity && !this.props.cliqaApp
-                  ? "radio-area-hide"
-                  : "radio-area"
-              }
+              className={langEngTrue?"radio-areaEng":"radio-area"}
+
+              /*    {*/
+              /*  !this.state.radioButtonsActivity && !this.props.cliqaApp*/
+              /*    ? "radio-area-hide"*/
+              /*    : "radio-area"*/
+              /*}*/
+
             >
               {/* <label className="privacy-policy">
               <Field
@@ -414,7 +420,7 @@ class RegisterForm extends Component {
 
 
             <Field
-                className="input-long text-area"
+                className={langEngTrue?"input-longEng text-area":"input-long text-area"}
                 name="comments"
                 component={customTextArea}
                 type="text"
@@ -509,7 +515,7 @@ class RegisterForm extends Component {
             <br />
             <div className="disabled-first-row">
               <input
-                className="input"
+                  className={langEngTrue?"inputEng":"input"}
                 disabled
                 value={this.props.ff.register.values.cloudpass}
               />
@@ -526,19 +532,19 @@ class RegisterForm extends Component {
                 value={this.props.ff.register.values.firstname}
               />
               <input
-                className="input"
+                  className={langEngTrue?"inputEng":"input"}
                 disabled
                 value={this.props.ff.register.values.phone}
               />
             </div>
             <div className="disabled-second-row">
               <input
-                className="input"
+                  className={langEngTrue?"inputEng":"input"}
                 disabled
                 value={this.props.ff.register.values.albumname}
               />
               <input
-                className="input"
+                  className={langEngTrue?"inputEng":"input"}
                 disabled
                 value={this.props.ff.register.values.email}
               />

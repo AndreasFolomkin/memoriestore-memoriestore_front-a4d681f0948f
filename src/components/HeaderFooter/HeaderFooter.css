@@ -37,6 +37,39 @@
     position: relative;
     top: -3px;	
 }
+.DropdownButtonHand{
+	/*background-color: #36ff6a;*/
+
+}
+#dropdown-item-button{
+width: 5rem;
+	height:1.5rem;
+ background-color:#f8f9fa;
+	background-image: url("../../img/iconfinder_multi-language_3018527 (1).png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	border: none;
+}
+
+#dropdown-item-button::after{
+	display: none;
+}
+#dropdown-item-button:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+.dropdown-menu.show{
+	background-color: #208092;
+	border-radius: 5px;
+	width: 5rem;
+	min-width: 5rem;
+	font-family: "HeeboBold";
+}
+
+
 
 @media only screen and (min-width: 0px) and (max-width: 800px) {
     .footer-memoriestor .navbar{

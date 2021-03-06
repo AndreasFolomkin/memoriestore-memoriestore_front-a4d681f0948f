@@ -49,10 +49,11 @@ export const customInput = props => {
 
 export const customRadio = props => {
   const { values, checkedValue } = props;
+  let langEngTrue = localStorage.getItem("locale") === "en_us" ;
   return (
-    <div className="custom-radio">
+    <div className={langEngTrue?"custom-radioEng":"custom-radio"}>
       <label>{props.label}</label>
-      <div className="custom-radio-container">
+      <div className={langEngTrue?"custom-radio-containerEng":"custom-radio-container"}>
         {props.values.map((value, key) => {
           return (
             //<label for={`contactChoice${key}`}>

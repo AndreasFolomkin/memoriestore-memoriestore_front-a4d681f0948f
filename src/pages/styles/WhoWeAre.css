@@ -75,19 +75,19 @@
   font-family: "Alef", sans-serif;
   font-size: 14px;
 }
-.input {
-  background-color: #f2f2f2;
-  border: none;
-  color: #747474;
-  height: 40px;
-  width: 302px;
-  text-align: right;
-  padding-right: 20px;
-  box-sizing: border-box;
-  font-family: "Alef", sans-serif;
-  font-size: 14px;
-  direction: rtl;
-}
+/*.input {*/
+/*  background-color: #f2f2f2;*/
+/*  border: none;*/
+/*  color: #747474;*/
+/*  height: 40px;*/
+/*  width: 302px;*/
+/*  text-align: right;*/
+/*  padding-right: 20px;*/
+/*  box-sizing: border-box;*/
+/*  font-family: "Alef", sans-serif;*/
+/*  font-size: 14px;*/
+/*  direction: rtl;*/
+/*}*/
 .fields-container {
   display: flex;
   justify-content: space-between;
