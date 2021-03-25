@@ -8,7 +8,7 @@
 }
 .first-page,
 .second-page {
-  padding: 90px 60px 90px 0px;
+  padding: 0px 60px 0px 0px;
 }
 
 .third-page {
@@ -86,7 +86,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   width: 100%;
 }
 
@@ -448,7 +448,7 @@ input::-webkit-inner-spin-button {
 }
 .order-headerEng {
   font-size: 54px;
-  margin-top: 43px;
+  margin-top:27px;
 
   font-weight: 700;
   text-align: left;
@@ -658,8 +658,34 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 1400px) {
+  .formEng {
+     /*max-width: 320px;*/
+    padding: 30px;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .order-headerEng{
+    font-size: 40px;
+    /*margin-top: 84px;*/
+    text-align: left;
+
+  }
+  .order-descrEng {
+    max-width: 600px;
+    text-align: left;
+    margin-top: 35px;
+
+    font-size: 25px;
+    margin-bottom: 60px;
+  }
+
+
+  .first-page,
   .second-page {
-    margin-left: 0;
+    padding: 0px 0px 0px 0px;
   }
   .first-page {
     width: 100%;
@@ -712,6 +738,16 @@ input[type="radio"]:checked:after {
   }
 }
 @media screen and (max-width: 770px) {
+  .formEng {
+    /* max-width: 320px; */
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
   input {
     outline: 0;
     padding: 0;
@@ -740,7 +776,7 @@ input[type="radio"]:checked:after {
   }
   .order-headerEng{
     font-size: 30px;
-    margin-top: 84px;
+    /*margin-top: 84px;*/
     text-align: left;
 
   }
@@ -778,7 +814,7 @@ input[type="radio"]:checked:after {
   .back-button-conf {
     transform: initial;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 3px;
     padding-left: 40px;
   }
   .first-page .back-button-conf {
@@ -825,10 +861,10 @@ input[type="radio"]:checked:after {
     height: 950px;
   }
   .second-page .second-button-wrapper {
-    height: 250px;
+
     display: flex;
     align-items: flex-start;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
   .third-container .button-container {
     height: 100px;
