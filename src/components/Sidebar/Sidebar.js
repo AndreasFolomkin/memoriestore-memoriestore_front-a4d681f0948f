@@ -17,8 +17,8 @@ class Sidebar extends Component {
   }
   render() {
     const { data } = this.props;
-    const local = localStorage.getItem("locate");
-//    console.log(data)
+    const locale = localStorage.getItem("locale");
+   console.log(locale, "local from sidebar")
     return (
       <div className="sidebar">
         <div className="sidebar-content">

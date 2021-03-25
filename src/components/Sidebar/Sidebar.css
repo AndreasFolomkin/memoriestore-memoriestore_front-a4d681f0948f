@@ -13,6 +13,21 @@
   background-color: #73808c;
   /* background-size: cover; */
 }
+.sidebarEng {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./sidebareng.png);
+  width: 32.5%;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  margin-right: 15%;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-color: #73808c;
+  /* background-size: cover; */
+}
 .sidebar-content {
   flex-direction: column;
   display: flex;

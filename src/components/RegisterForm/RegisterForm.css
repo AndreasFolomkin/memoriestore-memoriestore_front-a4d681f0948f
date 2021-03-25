@@ -71,7 +71,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 /* Restrict the form's max-width for the sake of responsiveness; center the content */
-form {
+.formCustom {
   /* max-width: 320px; */
   padding: 30px;
   margin: auto;
@@ -80,6 +80,16 @@ form {
   align-items: flex-end;
   width: 100%;
 }
+.formEng {
+  /* max-width: 320px; */
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
 
 /* Position the label so that it looks like a placeholder; disable clicking/tapping */
 input:not([type="checkbox"]) + label {
@@ -436,12 +446,27 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   text-align: right;
 }
+.order-headerEng {
+  font-size: 54px;
+  margin-top: 43px;
+
+  font-weight: 700;
+  text-align: left;
+}
 .order-descr {
   max-width: 600px;
   text-align: right;
   margin-top: 35px;
   
-  font-size: 23px;
+  font-size: 33px;
+  margin-bottom: 60px;
+}
+.order-descrEng {
+  max-width: 600px;
+  text-align: left;
+  margin-top: 35px;
+
+  font-size: 33px;
   margin-bottom: 60px;
 }
 .second-page .first-row,
@@ -574,7 +599,7 @@ input[type="radio"]:checked:after {
 
 .second-page {
   width: 100%;
-  width: 100%;
+
   display: flex;
   justify-content: flex-end;
 }
@@ -687,16 +712,50 @@ input[type="radio"]:checked:after {
   }
 }
 @media screen and (max-width: 770px) {
+  input {
+    outline: 0;
+    padding: 0;
+    order: -1;
+  }
+  .radio-areaEng {
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    transition: 0.5s;
+    /*height: 560px;*/
+  }
+  .custom-radioEng {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    text-align: left;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
   .confirm-header,
   .order-header {
     font-size: 30px;
     margin-top: 84px;
   }
+  .order-headerEng{
+    font-size: 30px;
+    margin-top: 84px;
+    text-align: left;
+
+  }
+
+
   .first-page h1 {
     font-size: 22px;
     margin-top: 40px;
   }
   .order-descr {
+    font-size: 16px;
+    max-width: 302px;
+    line-height: 20px;
+  }
+  .order-descrEng {
     font-size: 16px;
     max-width: 302px;
     line-height: 20px;
@@ -736,6 +795,19 @@ input[type="radio"]:checked:after {
   }
   .input-long {
     width: 302px;
+  }
+  .input-longEng {
+      width: 302px;
+    }
+  .custom-radio-containerEng {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-top: 24px;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    align-self: flex-start;
   }
   .radio-activity-container img {
     margin-top: 15px;

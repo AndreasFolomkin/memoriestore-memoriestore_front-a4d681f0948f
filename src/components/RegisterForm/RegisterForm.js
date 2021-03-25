@@ -185,7 +185,7 @@ class RegisterForm extends Component {
           {/*    <img src={Logo} className="header-logo" alt="memoriestore" />*/}
           {/*  </Link>*/}
           {/*</HeaderFooter>*/}
-          <form
+          <form className={langEngTrue?"formEng":"formCustom"}
             onSubmit={e => {
               e.preventDefault();
               this.setState({ isSubmitted: true });
@@ -197,9 +197,9 @@ class RegisterForm extends Component {
               <img src={backico} alt="memoriestore" />{" "}
               <p>{regData.data.back_button}</p>
             </Link>
-            <h1 className="order-header">{regData.data.order_header}</h1>
+            <h1 className={langEngTrue?"order-headerEng":"order-header"}>{regData.data.order_header}</h1>
 
-            <div className="order-descr">
+            <div className={langEngTrue?"order-descrEng":"order-descr"}>
               <div>
                 <p>{regData.data.ordering}</p>
                 <p className="choosen-tariff">"{tariffName}"</p>
