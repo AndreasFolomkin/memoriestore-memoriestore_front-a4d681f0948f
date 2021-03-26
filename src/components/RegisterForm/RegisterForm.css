@@ -202,7 +202,7 @@ input {
 }
 .custom-radioEng label {
   font-weight: 400;
-
+ text-align: center;
   font-size: 17px;
   letter-spacing: 0.5px;
 }
@@ -216,6 +216,7 @@ input {
 .custom-radioEng label:first-child {
   font-weight: bold;
   font-size: 24px;
+
 }
 
 .custom-radio div label:first-child {
@@ -238,6 +239,7 @@ input {
 .custom-radio-containerEng {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
   margin-left: 25%;
   margin-top: 24px;
   margin-right: 1%;
@@ -258,7 +260,9 @@ input {
 
 .custom-radio-containerEng label:hover {
    color: #236dff;
-
+}
+.custom-radio-containerEng label:first-child {
+  text-align: start;
 }
 
 .custom-radio-container p {
@@ -468,12 +472,12 @@ input::-webkit-inner-spin-button {
   margin-bottom: 60px;
 }
 .order-descrEng {
-  max-width: 600px;
+  max-width: 800px;
   text-align: left;
   margin-top: 35px;
 
-  font-size: 33px;
-  margin-bottom: 60px;
+  font-size: 28px;
+  margin-bottom: 40px;
 }
 .second-page .first-row,
 .second-page .secound-row {
@@ -786,7 +790,12 @@ input[type="radio"]:checked:after {
     text-align: left;
 
   }
-
+  .custom-radioEng label {
+    font-weight: 400;
+    text-align: left;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+  }
 
   .first-page h1 {
     font-size: 22px;
