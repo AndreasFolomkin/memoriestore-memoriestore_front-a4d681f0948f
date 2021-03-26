@@ -83,10 +83,10 @@
 .formEng {
   /* max-width: 320px; */
   padding: 30px;
-  margin: auto;
+  margin-left: 30%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
 }
 
@@ -110,6 +110,7 @@ input:not([type="checkbox"]) + label {
 input {
   outline: 0;
   padding: 0;
+  order: -1;
 }
 
 .custom-input-container,
@@ -189,7 +190,7 @@ input {
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
-  text-align: right;
+  text-align: start;
   transition: 0.5s;
   overflow: hidden;
 }
@@ -237,7 +238,7 @@ input {
 .custom-radio-containerEng {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   margin-left: 30%;
   margin-top: 24px;
   margin-right: 1%;
@@ -252,9 +253,15 @@ input {
 .custom-radio-containerEng label {
   display: flex;
   flex-direction: row;
-
+ cursor: pointer;
   font-weight: 100 !important;
 }
+
+.custom-radio-containerEng label:hover {
+   color: #236dff;
+
+}
+
 .custom-radio-container p {
   padding-right: 10px;
   margin-left: 10px;
@@ -700,7 +707,7 @@ input[type="radio"]:checked:after {
     flex-direction: column-reverse;
   }
   .custom-radio-containerEng {
-    align-self: flex-end;
+    align-self: flex-start;
     flex-direction: column;
   }
   .custom-radio div label {
